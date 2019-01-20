@@ -6,7 +6,7 @@ class List extends Component{
 	constructor(props){
 		super(props);
 		this.state = {
-			listData: 
+			listData: []
 		}
 	}
 	componentDidMount(){
