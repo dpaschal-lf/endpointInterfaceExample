@@ -17,7 +17,7 @@
 	if($result){ //check if the query or connection failed
 		if( mysqli_num_rows($result) > 0){ //check if we got some data
 			while($row = mysqli_fetch_assoc($result)){
-				$data = $row;
+				$data[] = $row;
 			}
 			$output['success'] = true;
 			$output['data'] = $data;
