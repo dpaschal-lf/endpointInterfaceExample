@@ -19,10 +19,10 @@ class List extends Component{
 	}
 	createRows(){
 		return this.state.listData.map( (item, index) =>
-			<div className="row">
-				<img className="smallImage" src="images/tophat.jpg"/>
-				<div className="nameContainer">Top Hat</div>
-				<div className="priceContainer">$16.20</div>
+			<div className="row" key={index+item.name}>
+				<img className="smallImage" src={item.image}/>
+				<div className="nameContainer">{item.name}</div>
+				<div className="priceContainer">{item.price}</div>
 				<div className="colorContainer">
 					<div className="colorSquare" style={{backgroundColor: 'black'}}></div>
 					<div className="colorSquare" style={{backgroundColor: 'blue'}}></div>
