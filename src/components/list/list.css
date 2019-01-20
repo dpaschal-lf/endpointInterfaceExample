@@ -1,0 +1,41 @@
+		body{
+			margin: 0;
+		}
+		.container{
+			height: 100vh;
+			width: 40vw;
+			border: 1px solid black;
+		}
+		.row{
+			border-bottom: 1px solid black;
+			display: flex;
+			font-size: 180%;
+		}
+		.smallImage{
+			height: 8vh;
+			margin: auto 2%;
+		}
+		.nameContainer{
+			width: 40%;
+			line-height: 200%;
+		}
+		.priceContainer{
+			width: 20%;
+			line-height: 200%;
+		}
+		.colorContainer{
+			width: 20%;
+			background-color: whitesmoke;
+			display: flex;
+		}
+		.colorSquare{
+			width: 33%;
+			height: 50%;
+		}
+		.actionContainer{
+			width: 10%;
+			background-color: white;
+			line-height: 200%;
+			font-size: 100%;
+			text-align: center;
+		}
