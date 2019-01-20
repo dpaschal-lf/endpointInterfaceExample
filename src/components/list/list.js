@@ -24,15 +24,17 @@ class List extends Component{
 				<div className="nameContainer">{item.name}</div>
 				<div className="priceContainer">{item.price}</div>
 				<div className="colorContainer">
-					<div className="colorSquare" style={{backgroundColor: 'black'}}></div>
-					<div className="colorSquare" style={{backgroundColor: 'blue'}}></div>
-					<div className="colorSquare" style={{backgroundColor: 'red'}}></div>
-					<div className="colorSquare" style={{backgroundColor: 'grey'}}></div>
+					{this.createColors( item.colors )}
 				</div>
 				<div className="actionContainer">
 					<div className="action">+</div>
 				</div>
 			</div>			
+		)
+	}
+	createColors(colors){
+		return colors.map( (color, index) =>
+			<div key={index} className="colorSquare" style={{backgroundColor: color}}></div>
 		)
 	}
 	render(){
