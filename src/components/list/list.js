@@ -7,36 +7,35 @@ class List extends Component{
 	}
 	render(){
 		return(
-			<div class="container">
-					<div class="row">
-						<img class="smallImage" src="images/tophat.jpg">
-						<div class="nameContainer">Top Hat</div>
-						<div class="priceContainer">$16.20</div>
-						<div class="colorContainer">
-							<div class="colorSquare" style="background-color: black"></div>
-							<div class="colorSquare" style="background-color: blue"></div>
-							<div class="colorSquare" style="background-color: red"></div>
-							<div class="colorSquare" style="background-color: grey"></div>
-						</div>
-						<div class="actionContainer">
-							<div class="action">+</div>
-						</div>
+			<div className="container">
+				<div className="row">
+					<img className="smallImage" src="images/tophat.jpg"/>
+					<div className="nameContainer">Top Hat</div>
+					<div className="priceContainer">$16.20</div>
+					<div className="colorContainer">
+						<div className="colorSquare" style={{backgroundColor: 'black'}}></div>
+						<div className="colorSquare" style={{backgroundColor: 'blue'}}></div>
+						<div className="colorSquare" style={{backgroundColor: 'red'}}></div>
+						<div className="colorSquare" style={{backgroundColor: 'grey'}}></div>
 					</div>
-					<div class="row">
-						<img class="smallImage" src="images/tophat.jpg">
-						<div class="nameContainer">Top Hat</div>
-						<div class="priceContainer">$16.20</div>
-						<div class="colorContainer">
-							<div class="colorSquare" style="background-color: black"></div>
-							<div class="colorSquare" style="background-color: blue"></div>
-							<div class="colorSquare" style="background-color: red"></div>
-							<div class="colorSquare" style="background-color: grey"></div>
-						</div>
-						<div class="actionContainer">
-							<div class="action">+</div>
-						</div>
+					<div className="actionContainer">
+						<div className="action">+</div>
 					</div>
-				</div
+				</div>
+				<div className="row">
+					<img className="smallImage" src="images/tophat.jpg"/>
+					<div className="nameContainer">Top Hat</div>
+					<div className="priceContainer">$16.20</div>
+					<div className="colorContainer">
+						<div className="colorSquare" style={{backgroundColor: 'black'}}></div>
+						<div className="colorSquare" style={{backgroundColor: 'blue'}}></div>
+						<div className="colorSquare" style={{backgroundColor: 'red'}}></div>
+						<div className="colorSquare" style={{backgroundColor: 'grey'}}></div>
+					</div>
+					<div className="actionContainer">
+						<div className="action">+</div>
+					</div>
+				</div>
 			</div>
 		)
 	}
