@@ -30,6 +30,8 @@
 		$output['error'] = 'query failed!';
 	}
 
+	$json_output = json_encode($output);
+
 
 
 ?>
