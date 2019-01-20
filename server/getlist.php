@@ -14,9 +14,22 @@
 
 	$data = [];
 
-	while($row = mysqli_fetch_assoc($result)){
-		$data = $row;
+	if($result){ //check if the query or connection failed
+		if( mysqli_num_rows($result) > 0){ //check if we got some data
+			while($row = mysqli_fetch_assoc($result)){
+				$data = $row;
+			}
+			$output['success'] = true;
+			$output['data'] = $data;
+		} else {
+			//we had no data
+			$output['error'] = 'no data!';
+		}
+	} else {
+		//the query failed
+		$output['error'] = 'query failed!';
 	}
+
 
 
 ?>
