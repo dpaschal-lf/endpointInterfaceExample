@@ -1,9 +1,15 @@
 import React, {Component} from 'react';
 import './list.css';
+import axios from 'axios';
 
 class List extends Component{
 	constructor(props){
 		super(props);
+	}
+	componentDidMount(){
+		axios.get('/data/list.json').then( (response)=>{
+			console.log(response);
+		})
 	}
 	render(){
 		return(
