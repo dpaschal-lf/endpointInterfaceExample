@@ -13,7 +13,7 @@ class List extends Component{
 		axios.get('/data/list.json').then( (response)=>{
 			console.log(response);
 			this.setState({
-				listData: response.data
+				listData: response.data.data
 			})
 		})
 	}
