@@ -5,10 +5,16 @@ import axios from 'axios';
 class List extends Component{
 	constructor(props){
 		super(props);
+		this.state = {
+			listData: 
+		}
 	}
 	componentDidMount(){
 		axios.get('/data/list.json').then( (response)=>{
 			console.log(response);
+			this.setState({
+				listData: response.data
+			})
 		})
 	}
 	render(){
