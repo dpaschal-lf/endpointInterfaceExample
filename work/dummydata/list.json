@@ -1,0 +1,23 @@
+{
+	"data": [{
+		"image": "images/tophat.jpg",
+		"name": "Top hat",
+		"price": 16.2,
+		"colors": ["black", "blue", "red", "grey"]
+	}, {
+		"image": "images/tophat.jpg",
+		"name": "Top hat",
+		"price": 16.2,
+		"colors": ["black", "blue", "red", "grey"]
+	}, {
+		"image": "images/tophat.jpg",
+		"name": "Top hat",
+		"price": 16.2,
+		"colors": ["black", "blue", "red", "grey"]
+	}, {
+		"image": "images/tophat.jpg",
+		"name": "Top hat",
+		"price": 16.2,
+		"colors": ["black", "blue", "red", "grey"]
+	}]
+}
