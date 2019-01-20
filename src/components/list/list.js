@@ -18,7 +18,6 @@ class List extends Component{
 		})
 	}
 	createRows(){
-		debugger;
 		return this.state.listData.map( (item, index) =>
 			<div className="row">
 				<img className="smallImage" src="images/tophat.jpg"/>
