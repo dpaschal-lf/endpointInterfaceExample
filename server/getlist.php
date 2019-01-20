@@ -9,6 +9,8 @@
 		'success' => false
 	];
 
+	$query = "select * from `listitems`";
+	$result = mysqli_query($conn, $query);
 
 
 ?>
