@@ -10,7 +10,7 @@ class List extends Component{
 		}
 	}
 	componentDidMount(){
-		axios.get('/data/list.json').then( (response)=>{
+		axios.get('http://localhost:8866/_classes/c12.18/samplecomponent/server/getlist.php').then( (response)=>{
 			console.log(response);
 			this.setState({
 				listData: response.data.data
